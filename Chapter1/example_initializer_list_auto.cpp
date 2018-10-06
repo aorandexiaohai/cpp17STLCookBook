@@ -20,8 +20,8 @@ int main()
         std::vector<int> v2={1, 2, 3};
 
         //行为不一致
-        std::vector<int> v3{10,20};
-        std::vector<int> v4(10,20);
+        std::vector<int> v3{10,20};//10,20两个元素
+        std::vector<int> v4(10,20);//20个元素,每个元素都为10
         UT_EXPECT_CURRENT(v3.size() != v4.size());
     }
 }
